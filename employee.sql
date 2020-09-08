@@ -24,5 +24,28 @@ CREATE TABLE employee (
     manager_id INT
 );
 
-INSERT INTO department () 
+INSERT INTO department (name); 
+VALUES 
+("Management"),
+("Sales"),
+("Human Resources"),
+("Logistics");
+
+INSERT INTO roles (title, salary, department_id)
+VALUES 
+("Manager", "100,000", "1"),
+("Floor Manager", "65,000", "2"),
+("Floor Leader", "55,000", "3"),
+("Logistics", "50,000", "4");
+
+INSERT INTO employee (first_name, last_name, role_id, manager_id)
 VALUES
+("John", "Doe", "1", "1"),
+("Jane", "Doe", "2", "1"),
+("Iam", "McLovin", "3", "1");
+
+SELECT*FROM department;
+SELECT*FROM roles;
+SELECT*FROM employee
+
+
