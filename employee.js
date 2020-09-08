@@ -6,7 +6,7 @@ var connection = mysql.createConnection({
     port: 3306,
     user: "root",
     password: "lidd0501",
-    database: "ice_creamDB"
+    database: "employeeDB"
 });
 
 connection.connect(function (err) {
@@ -52,7 +52,7 @@ function departmentsAdd() {
         console.log(answers)
         connection.query("INSERT INTO department SET ?",
         {
-            names: answers.departmentName
+            department_name: answers.departmentName
         },
          (err, res) => {
             if(err) throw err;
